@@ -80,11 +80,11 @@ const globalStyles = (
       'html, body': {
         margin: 0,
         padding: 0,
-        overflow: 'hidden',
+        overflowX: 'hidden',
       },
       '#root': {
         height: '100vh',
-        overflow: 'hidden',
+        overflowX: 'hidden',
       },
     }}
   />
@@ -197,7 +197,7 @@ const App = () => {
             flexDirection: 'column',
             py: 2,
             px: { xs: 2, sm: 3 },
-            overflow: 'hidden',
+            overflowX: 'hidden',
           }}
         >
           <Typography 
