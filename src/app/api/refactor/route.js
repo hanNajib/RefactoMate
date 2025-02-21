@@ -14,7 +14,7 @@ export async function POST(req) {
                             {
                                 text: `Kamu adalah AI expert refactoring kode. 
                                 Optimalkan kode tanpa mengubah fungsionalitasnya. 
-                                Gunakan teknik modern, bersih, dan efisien.`,
+                                Gunakan teknik modern, bersih, dan efisien, Best Practices (DRY, SOLID, KISS)`,
                             },
                             {
                                 text: `Refactor kode berikut:
