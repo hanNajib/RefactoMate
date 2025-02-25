@@ -289,6 +289,7 @@ const App = () => {
                     mt: 2,
                     height: 48,
                     fontSize: '1.1rem',
+                    transform: 'translateY(10px)'
                   }}
                 >
                   {loading ? "Refactoring..." : "Refactor"}
