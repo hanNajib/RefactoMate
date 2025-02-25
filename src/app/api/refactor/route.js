@@ -6,10 +6,11 @@ export async function POST(req) {
         const { code } = await req.json();
 
         const response = await axios.post(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent?key=${process.env.GEMINI_API_KEY}`,
             {
                 contents: [
                     {
+                        role: 'user',
                         parts: [
                             {
                                 text: `Kamu adalah AI expert refactoring kode. 
@@ -24,8 +25,16 @@ export async function POST(req) {
                                 Berikan hasil refactoring terbaik tanpa memberikan penjelasan, murni raw code tanpa \`\`\`:`,
                             },
                         ],
+                        
                     },
                 ],
+                "generationConfig": {
+                    "temperature": 0.7,
+                    "topK": 64,
+                    "topP": 0.95,
+                    "maxOutputTokens": 65536,
+                    "responseMimeType": "text/plain"
+                  }
             },
             {
                 headers: {
