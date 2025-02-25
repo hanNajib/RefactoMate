@@ -3,7 +3,7 @@ export const metadata = {
     description:
       "RefactoMate is your AI-powered assistant for seamless code refactoring, powered by Google Gemini 2.0 Flash AI. Improve performance, readability, and maintainability with ease.",
     keywords:
-      "AI code refactoring, AI developer tools, code optimization, code improvement, automated refactoring, clean code AI, smart coding assistant, software engineering tools",
+      "AI code refactoring, AI developer tools, code optimization, code improvement, automated refactoring, clean code AI, smart coding assistant, software engineering tools, refactomate, RefactoMate, refacto mate, refactoring code",
     openGraph: {
       title: "RefactoMate - AI Code Refactoring Assistant",
       description:
